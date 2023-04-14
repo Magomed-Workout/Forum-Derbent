@@ -1,0 +1,111 @@
+* { /*Обращение ко всем html файлам*/
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: none;
+    border-bottom: 1px solid #ccc;
+}
+
+.header--fixed {
+    position: fixed;
+    top: 0;
+    z-index: -5;
+
+     left: 50%; 
+    transform: translateX(-50%); 
+    transition: .3s all;
+
+    width: 100%;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 20px;
+}
+
+a {
+    font-size: 16px;
+    padding: 20px;
+    color: #ffffff;
+    text-decoration: none;
+    font-family: cursive;
+    transition: color 0.3s linear;
+}
+
+a:hover {
+    color: #ff0000;
+}
+
+li {
+    display: inline;
+}
+
+#logo {
+    width: 80px;
+    height: 80px;
+    position: fixed;
+    left: 1%;
+    top: -0.8%  
+}
+
+#header {
+    position: absolute;
+    bottom: -70px;
+    top: 1030px;
+    z-index: -5;
+
+     left: 50%; 
+    transform: translateX(-50%); 
+    transition: .3s all;
+    width: 100%;
+    font-family: cursive;
+}
+
+#ul {
+    background-color: #000000;
+    height: 100px;
+}
+
+#h2 {
+    position: relative;
+    top: -30px;
+}
+
+@media screen and (max-width: 1600px) {
+    #header {
+        top: 1100px;
+    }
+}
+
+@media screen and (max-width: 1440px) {
+    #header {
+        top: 1200px;
+    }
+}
+
+@media screen and (max-width: 1366px) {
+    #header {
+        top: 1050px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    #header {
+        top: 1000px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+
+}
+
+@media screen and (max-width: 768px) {
+
+}
+
+@media screen and (max-width: 575px) {
+
+}
